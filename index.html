@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <div class="top_bar">
+        <div class="logo">
+            <h2 class="logo-icon">SMS</h2>
+            <h2 id="title">Student Management System</h2>
+        </div>
+        <a href="#" class="logout"><h2>Logout</h2></a>
+        </div>
+        <div class="bottom_bar">
+        <ul class="nav_links">
+            <li><a href="#" class="active"><h3>Dashboard</h3></a></li>
+            <li><a href="#"><h3>Students</h3></a></li>
+            <li><a href="#"><h3>Register Student</h3></a></li>
+            <li><a href="#"><h3>About</h3></a></li>
+            <li><a href="#"><h2>Profile</h2></a></li>
+        </ul>
+        </div>
+    </nav>
+     
+    <main class="dashboard-content">
+        <section class="welcome-section">
+            <h1> Welcome back, Admin!</h1>
+                <p>
+                    Manage your students, monitor academic activities, and keep track of your institution's records.
+                </p>
+        </section>
+        <section class="statistics">
+            <div class="stat-card">
+                <i class="bi bi-people-fill"></i>
+                <h3>Total Students</h3>
+                <p>1250</p>
+            </div>
+            <div class="stat-card">
+                <i class="bi bi-gender-male"></i>
+                <h3>Male Students</h3>
+                <p>720</p>
+            </div>
+            <div class="stat-card">
+                <i class="bi bi-gender-female"></i>
+                <h3>Female Students</h3>
+                <p>530</p>
+            </div>
+            <div class="stat-card">
+                <i class="bi bi-person-check-fill"></i>
+                <h3>Active Students</h3>
+                <p>1180</p>
+            </div>
+        </section>
+        <section class="student-overview">
+            <div class="section-header">
+                <h2>Student Overview</h2>
+                <p>A quick overview of recently registered students.</p>
+                <button class="view-all-btn" type="button">View All Students</button>
+                <i class="bi bi-arrow-right"></i>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Full Name</th>
+                            <th>Gender</th>
+                            <th>Programme</th>
+                            <th>Level</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>STU001</td>
+                            <td>John Mbarga</td>
+                            <td>Male</td>
+                            <td>Computer Science</td>
+                            <td>HND 1</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU002</td>
+                            <td>Mari Tabi</td>
+                            <td>Female</td>
+                            <td>Accounting</td>
+                            <td>HND 2</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU003</td>
+                            <td>Peter Fomusoh</td>
+                            <td>Male</td>
+                            <td>Networking</td>
+                            <td>HND 1</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU004</td>
+                            <td>Grace Nchami</td>
+                            <td>Female</td>
+                            <td>Data Science</td>
+                            <td>HND 2</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="recent-activity">
+            <div class="activity-header">
+                <h2>Recent Activities</h2>
+                <p>Monitor the latest activities on the platform</p>
+            </div>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <i class="bi bi-person-plus-fill"></i>
+                    <div>
+                        <h4>New Student Registered</h4>
+                        <p>John Mbarga was registered into Computer Science.</p>
+                        <small>Today, 10:30 AM</small>
+                    </div>
+                </div>
+                 <div class="activity-item">
+                    <i class="bi bi-pencil-square"></i>
+                    <div>
+                        <h4>Student Record Updated</h4>
+                        <p>Mary Tabi's information was updated</p>
+                        <small>Today, 9:15 AM</small>
+                    </div>
+                </div>
+                 <div class="activity-item">
+                    <i class="bi bi-person-check-fill"></i>
+                    <div>
+                        <h4>New Lecturer Added</h4>
+                        <p>A new lecturer account was created</p>
+                        <small>Yesterday, 3:45 PM</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="students-section">
+            <div class="student-header">
+                
+                    <h1>Students Management</h1>
+                    <p>View, search and manage all registered students.</p>
+                
+            <button class="add-student-btn"><i class="bi bi-people-plus-fill"></i>Add New Student</button>
+            </div>
+            <div class="students-tools">
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="search by name or student ID...">
+                </div>
+                <select class="filter-search">
+                    <option value="">All Programmes</option>
+                    <option value="computer-science">Computer Science</option>
+                    <option value="accounting">Accounting</option>
+                    <option value="networking">Networking</option>
+                    <option value="data-science">Data Science</option>
+                </select>
+                <select class="filter-select">
+                    <option value="">All Status</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+            </div>
+            <div class="student-table-container">
+                <table class="students-table">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Full Name</th>
+                            <th>Gender</th>
+                            <th>Programme</th>
+                            <th>Level</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>STU001</td>
+                            <td>John Mbarga</td>
+                            <td>Male</td>
+                            <td>Computer Science</td>
+                            <td>HND 1</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU002</td>
+                            <td>Mari Tabi</td>
+                            <td>Female</td>
+                            <td>Accounting</td>
+                            <td>HND 2</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>STU003</td>
+                            <td>Peter Fomusoh</td>
+                            <td>Male</td>
+                            <td>Networking</td>
+                            <td>HND 1</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>STU004</td>
+                            <td>Grace Nchami</td>
+                            <td>Female</td>
+                            <td>Data Science</td>
+                            <td>HND 2</td>
+                            <td><span class="status active">Active</span></td>
+                            <td class="action-buttons">
+                                <button class="view-btn" title="View Student">
+                                    <i class="bi bi-eye-fill"></i>
+                                </button>
+                                <button class="edit-btn" title="Edit Student">
+                                    <i class="bi bi-pencil-square"></i>
+                                </button>
+                                <button class="delete-btn" title="Delete Student">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
